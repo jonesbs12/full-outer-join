@@ -21,9 +21,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Location" ? "active" : "")">@Html.ActionLink("Location", "Location", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "TravelInfo" ? "active" : "")">@Html.ActionLink("Travel Info", "TravelInfo", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "ThingsToDo" ? "active" : "")">@Html.ActionLink("Things To Do", "ThingsToDo", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "BranAng" ? "active" : "")">@Html.ActionLink("B + A", "BranAng", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "TheWedding" ? "active" : "")">@Html.ActionLink("The Wedding", "TheWedding", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Gifts" ? "active" : "")">@Html.ActionLink("Gifts & Registry", "Gifts", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
