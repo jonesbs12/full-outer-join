@@ -46,7 +46,7 @@ namespace WeddApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,NumAttending,Name,Accepts,Declines,NumKidsMeal,Comments")] RSVP rSVP)
+        public ActionResult Create([Bind(Include = "ID,NumAttending,Name,AcceptRegret,NumKidsMeal,Comments")] RSVP rSVP)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace WeddApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,NumAttending,Name,Accepts,Declines,NumKidsMeal,Comments")] RSVP rSVP)
+        public ActionResult Edit([Bind(Include = "ID,NumAttending,Name,AcceptRegret,NumKidsMeal,Comments")] RSVP rSVP)
         {
             if (ModelState.IsValid)
             {

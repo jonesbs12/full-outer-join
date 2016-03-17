@@ -28,6 +28,7 @@
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "BranAng" ? "active" : "")">@Html.ActionLink("B + A", "BranAng", "Home")</li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "TheWedding" ? "active" : "")">@Html.ActionLink("The Wedding", "TheWedding", "Home")</li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Gifts" ? "active" : "")">@Html.ActionLink("Gifts & Registry", "Gifts", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Create" ? "active" : "")">@Html.ActionLink("RSVP", "Create", "RSVPs")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

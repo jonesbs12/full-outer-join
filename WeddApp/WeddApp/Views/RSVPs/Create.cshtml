@@ -7,10 +7,10 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>RSVP</h4>
         <hr />
@@ -18,7 +18,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.NumAttending, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.NumAttending, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.NumAttending, new { htmlAttributes = new { @class = "form-control", @Value = "0" } })
                 @Html.ValidationMessageFor(model => model.NumAttending, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -26,35 +26,29 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "John Doe, Jane Doe, Etc." } })
                 @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <!-- use <label> -->
         <div class="form-group">
-            @Html.LabelFor(model => model.Accepts, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.AcceptRegret, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.Accepts)
-                    @Html.ValidationMessageFor(model => model.Accepts, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Declines, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.Declines)
-                    @Html.ValidationMessageFor(model => model.Declines, "", new { @class = "text-danger" })
-                </div>
+                <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    @Html.RadioButtonFor(model => model.AcceptRegret, "Accepted") Accept Invitation
+                </label>
+                <label class="btn btn-primary">
+                    @Html.RadioButtonFor(model => model.AcceptRegret, "Regrets") Decline Invitation
+                </label>
+                    </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.NumKidsMeal, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.NumKidsMeal, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.NumKidsMeal, new { htmlAttributes = new { @class = "form-control", @Value = "0" } })
                 @Html.ValidationMessageFor(model => model.NumKidsMeal, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -69,7 +63,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </div>
     </div>

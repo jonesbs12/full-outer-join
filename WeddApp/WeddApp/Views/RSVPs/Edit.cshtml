@@ -34,21 +34,11 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Accepts, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.AcceptRegret, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <div class="checkbox">
-                    @Html.EditorFor(model => model.Accepts)
-                    @Html.ValidationMessageFor(model => model.Accepts, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Declines, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.Declines)
-                    @Html.ValidationMessageFor(model => model.Declines, "", new { @class = "text-danger" })
+                    @Html.EditorFor(model => model.AcceptRegret)
+                    @Html.ValidationMessageFor(model => model.AcceptRegret, "", new { @class = "text-danger" })
                 </div>
             </div>
         </div>
