@@ -30,18 +30,19 @@
                 @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
             </div>
         </div>
-        <!-- use <label> -->
+
         <div class="form-group">
             @Html.LabelFor(model => model.AcceptRegret, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                    @Html.RadioButtonFor(model => model.AcceptRegret, "Accepted") Accept Invitation
-                </label>
-                <label class="btn btn-primary">
-                    @Html.RadioButtonFor(model => model.AcceptRegret, "Regrets") Decline Invitation
-                </label>
-                    </div>
+                    <label class="btn btn-primary">
+                        @Html.RadioButtonFor(model => model.AcceptRegret, "Accepted") Accept Invitation
+                    </label>
+                    <label class="btn btn-primary">
+                        @Html.RadioButtonFor(model => model.AcceptRegret, "Regrets") Decline Invitation
+                    </label>
+                </div>
+                @Html.ValidationMessageFor(model => model.AcceptRegret, "", new { @class = "text-danger" })
             </div>
         </div>
 
