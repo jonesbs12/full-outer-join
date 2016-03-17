@@ -170,18 +170,28 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RSVPsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RSVP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\holdinghands.jpg" />
+    <Content Include="Content\images\holdinghands2.jpg" />
+    <Content Include="Content\images\littlelighthouse.jpg" />
+    <Content Include="Content\images\littlelighthouse2.jpg" />
+    <Content Include="Content\images\paiacanoe.jpg" />
+    <Content Include="Content\images\paiacanoe2.jpg" />
+    <Content Include="Content\images\rockysurf.jpg" />
+    <Content Include="Content\images\rockysurf2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -238,6 +248,11 @@
     <Content Include="Views\Home\BranAng.cshtml" />
     <Content Include="Views\Home\TheWedding.cshtml" />
     <Content Include="Views\Home\Gifts.cshtml" />
+    <Content Include="Views\RSVPs\Create.cshtml" />
+    <Content Include="Views\RSVPs\Delete.cshtml" />
+    <Content Include="Views\RSVPs\Details.cshtml" />
+    <Content Include="Views\RSVPs\Edit.cshtml" />
+    <Content Include="Views\RSVPs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

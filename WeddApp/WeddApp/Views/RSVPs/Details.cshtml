@@ -1,0 +1,66 @@
+﻿@model WeddApp.Models.RSVP
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RSVP</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumAttending)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumAttending)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accepts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accepts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Declines)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Declines)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumKidsMeal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumKidsMeal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
