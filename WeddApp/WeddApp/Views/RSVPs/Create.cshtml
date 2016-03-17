@@ -76,4 +76,18 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $('input:radio[name="AcceptRegret"]').change(
+    function () {
+        if ($(this).val() == 'Regrets') {
+            $("#NumAttending").attr("disabled", "disabled");
+            $("#NumKidsMeal").attr("disabled", "disabled");
+        }
+        else {
+            $("#NumAttending").removeAttr("disabled")
+            $("#NumKidsMeal").removeAttr("disabled")
+        }
+    });
+    </script>
 }
