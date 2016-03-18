@@ -12,7 +12,7 @@ namespace WeddApp.Controllers
 {
     public class RSVPsController : Controller
     {
-        private RSVPDBContext db = new RSVPDBContext();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: RSVPs
         public ActionResult Index()

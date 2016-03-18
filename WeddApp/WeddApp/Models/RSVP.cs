@@ -34,8 +34,11 @@ namespace WeddApp.Models
         public string Comments { get; set; }
     }
 
+/*
     public class RSVPDBContext : DbContext
     {
+        public RSVPDBContext() : base("DefaultConnection") { }
         public DbSet<RSVP> RSVPs { get; set; }
     }
+    */
 }
