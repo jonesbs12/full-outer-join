@@ -22,7 +22,7 @@ namespace WeddApp.Controllers
 
         public ActionResult TravelInfo()
         {
-            ViewBag.Message = "Travel and Accomidation Information";
+            ViewBag.Message = "Travel and Accommodation Information";
 
             return View();
         }

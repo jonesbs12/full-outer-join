@@ -24,6 +24,7 @@ namespace WeddApp.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        public DbSet<RSVP> RSVPs { get; set; }
 
         public static ApplicationDbContext Create()
         {
