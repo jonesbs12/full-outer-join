@@ -1,11 +1,19 @@
-﻿body {
+﻿/*
+    dodgerblue: rgb(30, 144, 255)
+    indigo: rgb(75, 0, 130)
+*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color:#222222;
     font-family: 'Comic Sans MS';
     color: dodgerblue;
 }
-
+/* well css */
+.well{
+    background-color: rgba(75, 0, 130, 0.15);
+}
 /* Navbar Fonts */
 .navbar-inverse {
   background-color: #222222;
