@@ -4,15 +4,19 @@
 */
 
 body {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 20px;
     background-color:#222222;
     font-family: 'Comic Sans MS';
     color: dodgerblue;
 }
+
 /* well css */
-.well{
+.well {
     background-color: rgba(75, 0, 130, 0.15);
+}
+.well > .form-group {
+    padding-left:20px;
 }
 /* Navbar Fonts */
 .navbar-inverse {
@@ -170,4 +174,11 @@ textarea {
   color: #ffffff;
   background-color: indigo;
   border-color: black;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: rgba(75, 0, 130, 0.15);
 }

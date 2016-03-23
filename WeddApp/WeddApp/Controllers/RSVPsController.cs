@@ -15,6 +15,7 @@ namespace WeddApp.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: RSVPs
+        [Authorize(Roles = "Admin")]
         public ActionResult Index()
         {
             return View(db.RSVPs.ToList());
@@ -59,6 +60,7 @@ namespace WeddApp.Controllers
         }
 
         // GET: RSVPs/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -76,6 +78,7 @@ namespace WeddApp.Controllers
         // POST: RSVPs/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,NumAttending,Name,AcceptRegret,NumKidsMeal,Comments")] RSVP rSVP)
@@ -90,6 +93,7 @@ namespace WeddApp.Controllers
         }
 
         // GET: RSVPs/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -105,6 +109,7 @@ namespace WeddApp.Controllers
         }
 
         // POST: RSVPs/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

@@ -26,7 +26,7 @@ namespace WeddApp.Models
         public string AcceptRegret { get; set; }
 
         [Range(0, 10, ErrorMessage = "Must be between 0 and 10")]
-        [Display(Name = "Number of Children 12 and Under Attending", Description ="description stuff")]
+        [Display(Name = "Number of Children Attending(12 and Under)", Description ="description stuff")]
         public int NumKidsMeal { get; set; }
 
         [Display(Name = "Questions, Comments, Allergy Information")]
