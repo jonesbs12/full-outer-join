@@ -185,14 +185,18 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\hearts.png" />
     <Content Include="Content\images\holdinghands.jpg" />
     <Content Include="Content\images\holdinghands2.jpg" />
+    <Content Include="Content\images\Kampus-Map-Color-Coded.jpg" />
+    <Content Include="Content\images\Koru-Village-Resort-and-Spa-Logo-2015-250x200.png" />
     <Content Include="Content\images\littlelighthouse.jpg" />
     <Content Include="Content\images\littlelighthouse2.jpg" />
     <Content Include="Content\images\paiacanoe.jpg" />
     <Content Include="Content\images\paiacanoe2.jpg" />
     <Content Include="Content\images\rockysurf.jpg" />
     <Content Include="Content\images\rockysurf2.jpg" />
+    <Content Include="Content\images\savethedate.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
