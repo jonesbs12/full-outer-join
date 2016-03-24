@@ -11,6 +11,13 @@ body {
     color: dodgerblue;
 }
 
+/* Image Overlay */
+#carouselOverlay{
+    position:absolute;
+    z-index:1;
+    left:0px;
+    top:0px;
+}
 /* well css */
 .well {
     background-color: rgba(75, 0, 130, 0.15);
