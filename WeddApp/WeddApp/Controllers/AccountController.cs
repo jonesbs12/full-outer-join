@@ -136,6 +136,7 @@ namespace WeddApp.Controllers
 
         //
         // GET: /Account/Register
+        [NonAction]
         [AllowAnonymous]
         public ActionResult Register()
         {
@@ -145,6 +146,7 @@ namespace WeddApp.Controllers
         //
         // POST: /Account/Register
         [HttpPost]
+        [NonAction]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)

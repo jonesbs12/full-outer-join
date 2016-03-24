@@ -18,7 +18,7 @@ namespace WeddApp.Models
 
         [Required(ErrorMessage = "Please enter a name.")]
         [RegularExpression(@"^[a-zA-Z0-9'' ',\.]+$", ErrorMessage = "Invalid input. Use the following format: John Doe, Jane Doe, Jimmy Doe")]
-        [Display(Name = "Name of Persons Attending")]
+        [Display(Name = "Names of Persons Attending or Sending Regrets.")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Please Accept or Decline the invitation.")]
@@ -26,7 +26,7 @@ namespace WeddApp.Models
         public string AcceptRegret { get; set; }
 
         [Range(0, 10, ErrorMessage = "Must be between 0 and 10")]
-        [Display(Name = "Number of Kids Meals Needed(Kids Under 12)", Description ="description stuff")]
+        [Display(Name = "Number of Children Attending(12 and Under)", Description ="description stuff")]
         public int NumKidsMeal { get; set; }
 
         [Display(Name = "Questions, Comments, Allergy Information")]

@@ -1,11 +1,30 @@
-﻿body {
-    padding-top: 50px;
+﻿/*
+    dodgerblue: rgb(30, 144, 255)
+    indigo: rgb(75, 0, 130)
+*/
+
+body {
+    padding-top: 10px;
     padding-bottom: 20px;
     background-color:#222222;
     font-family: 'Comic Sans MS';
     color: dodgerblue;
 }
 
+/* Image Overlay */
+#carouselOverlay{
+    position:absolute;
+    z-index:1;
+    left:0px;
+    top:0px;
+}
+/* well css */
+.well {
+    background-color: rgba(75, 0, 130, 0.15);
+}
+.well > .form-group {
+    padding-left:20px;
+}
 /* Navbar Fonts */
 .navbar-inverse {
   background-color: #222222;
@@ -162,4 +181,11 @@ textarea {
   color: #ffffff;
   background-color: indigo;
   border-color: black;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: rgba(75, 0, 130, 0.15);
 }

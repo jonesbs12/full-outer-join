@@ -3,5 +3,72 @@
     ViewBag.Title = "Location";
 }
 
-<h2>@ViewBag.Message</h2>
+<h2>@ViewBag.Message</h2><br />
 
+<!---->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="~/Content/images/Koru-Village-Resort-and-Spa-Logo-2015-250x200.png" class="img-responsive" style="width:100%" alt="Koru Village Logo">
+        </div>
+        <div class="col-sm-8">
+            <div class="well">
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<br />
+<!---->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="~/Content/images/Kampus-Map-Color-Coded.jpg" class="img-responsive" style="width:100%" alt="Koru Village Map">
+        </div>
+        <div class="col-sm-8">
+            <div class="well">
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<br />
+<!---->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-8 col-md-8">
+            <div id="map" style="height:450px;width:100%"></div>
+        </div>
+        <div class="well col-sm-12 col-md-4 col-lg-4">
+            <p><strong>Koru Village Spa</strong></p>
+            <p>40920 N Carolina 12 Avon, NC</p>
+            <p>(252) 995-3125</p>
+        </div>
+    </div>
+</div>
+<br />
+
+
+@section Scripts{
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAch4UJR0dIo88qoDykY5IQkxMHchPW_78"></script>
+    <script>
+        var marker;
+        function initialize() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: { lat: 35.348114, lng: -75.504373 }
+            });
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                position: { lat: 35.348114, lng: -75.504373 }
+            })
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+}
