@@ -185,6 +185,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\acadia1.jpg" />
+    <Content Include="Content\images\beachcarry.jpg" />
+    <Content Include="Content\images\bluegift.jpg" />
+    <Content Include="Content\images\croatiatrail.jpg" />
+    <Content Include="Content\images\gardens.jpg" />
     <Content Include="Content\images\hearts.png" />
     <Content Include="Content\images\holdinghands.jpg" />
     <Content Include="Content\images\holdinghands2.jpg" />
@@ -194,9 +199,12 @@
     <Content Include="Content\images\littlelighthouse2.jpg" />
     <Content Include="Content\images\paiacanoe.jpg" />
     <Content Include="Content\images\paiacanoe2.jpg" />
+    <Content Include="Content\images\reilogo.jpg" />
     <Content Include="Content\images\rockysurf.jpg" />
     <Content Include="Content\images\rockysurf2.jpg" />
     <Content Include="Content\images\savethedate.jpg" />
+    <Content Include="Content\images\sunset.jpg" />
+    <Content Include="Content\images\targetlogo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -209,10 +217,13 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-final-countdown-min.js" />
+    <Content Include="Scripts\jquery-final-countdown.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\kinetic.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
