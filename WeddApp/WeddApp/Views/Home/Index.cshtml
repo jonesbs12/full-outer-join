@@ -33,13 +33,65 @@
 </div>
 @*   fancybox images   *@
 <hr />
+<div class="container-fluid bg-3 text-center">
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row1" href="~/Content/images/sunset.jpg" title="place1 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row1" href="~/Content/images/sunset.jpg" title="place2 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row1" href="~/Content/images/sunset.jpg" title="place3 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row1" href="~/Content/images/sunset.jpg" title="place4 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row2" href="~/Content/images/sunset.jpg" title="place5 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row2" href="~/Content/images/sunset.jpg" title="place6 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row2" href="~/Content/images/sunset.jpg" title="place7 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <a class="fancybox" rel="row2" href="~/Content/images/sunset.jpg" title="place8 desc here"><img src="~/Content/images/sunset.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image"></a>
+        </div>
+    </div>
+</div>
 
-
-@Scripts.Render("~/bundles/fancybox")
-@section Scripts{
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".fancybox").fancybox();
-        });
-    </script>
-}
+@Scripts.Render("~/Scripts/jquery.fancybox.js")
+    @Scripts.Render("~/bundles/fancybox")
+    @section Scripts{
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: 'elastic',
+                    closeEffect: 'elastic',
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        title: {
+                            type: 'float'
+                        },
+                        thumbs: {
+                            width: 50,
+                            height: 50
+                        }
+                    }
+                });
+            });
+        </script>
+    }

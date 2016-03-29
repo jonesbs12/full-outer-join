@@ -53,7 +53,7 @@ namespace WeddApp.Controllers
             {
                 db.RSVPs.Add(rSVP);
                 db.SaveChanges();
-                return RedirectToAction("RSVPAction", "Home");
+                return RedirectToAction("RSVPMessage", "Home");
             }
 
             return View(rSVP);

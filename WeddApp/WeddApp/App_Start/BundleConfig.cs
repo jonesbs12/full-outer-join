@@ -24,8 +24,10 @@ namespace WeddApp
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/fancybox").Include(
-                      "~/Scripts/jquery.fancybox*",
-                      "~/Scripts/jquery.mousewheel-*"));
+                      "~/Scripts/jquery.mousewheel-*",
+                      "~/Scripts/jquery.fancybox-buttons.js",
+                      "~/Scripts/jquery.fancybox-media.js",
+                      "~/Scripts/jquery.fancybox-thumbs.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
