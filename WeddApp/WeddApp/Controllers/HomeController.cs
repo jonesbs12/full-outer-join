@@ -55,5 +55,10 @@ namespace WeddApp.Controllers
             return View();
         }
 
+        public ActionResult RSVPMessage()
+        {
+            return View();
+        }
+
     }
 }
