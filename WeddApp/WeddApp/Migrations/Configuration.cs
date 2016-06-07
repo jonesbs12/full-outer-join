@@ -24,9 +24,9 @@ namespace WeddApp.Migrations
             var um = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
             var user = new ApplicationUser()
             {
-                UserName = "admin@fullouterjoin.net",
+                UserName = "",
             };
-            ir = um.Create(user, "JonesDorko230!");
+            ir = um.Create(user, "");
             if (ir.Succeeded == false)
                 return ir.Succeeded;
             ir = um.AddToRole(user.Id, "Admin");
